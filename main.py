@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # @Author: LogicJake
 # @Date:   2019-01-06 16:52:35
-# @Last Modified time: 2019-01-07 12:30:27
+# @Last Modified time: 2019-01-07 13:10:25
 import pygame
 import sys
 from pygame import locals
@@ -23,7 +23,7 @@ def main():
                 screen.set_start(click_x, click_y)
                 step = 2
                 pygame.display.set_caption(
-                    'click block to set obstacle blocks, press enter to next step')
+                    'click block to set obstacle blocks, press space to next step')
             elif event.type == pygame.MOUSEBUTTONDOWN and step == 2:
                 click_x, click_y = pygame.mouse.get_pos()
                 screen.set_obstacle(click_x, click_y)
